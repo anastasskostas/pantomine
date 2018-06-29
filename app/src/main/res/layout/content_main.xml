@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.kostanas.pantomine.activities.MainActivity"
+    tools:showIn="@layout/activity_main"
+    android:orientation="vertical"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:gravity="center">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/activity_main_logo"
+        android:layout_marginBottom="30dp"
+        android:src="@mipmap/pantominelogo"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="35sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorText"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ΝΕΟ ΠΑΙΧΝΑΙΔΙ"
+        android:id="@+id/activity_main_newGameBtn"
+        android:textColor="@color/colorText"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/colorBtn"
+        livebutton:shadowColor="@color/shadowBtn"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ΕΞΟΔΟΣ"
+        android:textColor="@color/colorText"
+        android:id="@+id/activity_main_exitBtn"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/fbutton_color_alizarin"
+        livebutton:shadowColor="@color/fbutton_color_pomegranate"/>
+
+</LinearLayout>

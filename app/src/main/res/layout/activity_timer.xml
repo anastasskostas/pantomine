@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingStart="35dp"
+    android:paddingEnd="35dp"
+    android:weightSum="1"
+    android:background="@drawable/img2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Movie Title"
+        android:id="@+id/activity_timer_movieTitle"
+        android:layout_margin="30dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/colorText"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ΠΑΙΞΕ"
+        android:id="@+id/activity_timer_startTimerBtn"
+        android:layout_marginBottom="50dp"
+        android:layout_below="@id/activity_timer_movieTitle"
+        android:background="@color/colorBtn"
+        android:textColor="@color/colorText"
+        android:textStyle="bold"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/colorBtn"
+        livebutton:shadowColor="@color/shadowBtn"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_timer_timer"
+        android:text="time"
+        android:gravity="center"
+        android:layout_marginBottom="40dp"
+        android:textSize="20sp"
+        android:layout_weight="0.07"
+        android:layout_below="@id/activity_timer_startTimerBtn"
+        android:textColor="@color/colorText"/>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_timer_hourglass"
+        android:src="@drawable/hourglass_start"
+        android:layout_below="@id/activity_timer_timer" />
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <View android:id="@+id/fakeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/activity_timer_movieFound"
+            android:text="ΒΡΕΘΗΚΕ"
+            android:layout_alignStart="@id/fakeView"
+            android:layout_alignParentEnd="true"
+            android:enabled="false"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            livebutton:corners="15dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_nephritis"
+            livebutton:shadowColor="@color/shadowPositive"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/activity_timer_movieNotFound"
+            android:text="ΔΕΝ ΒΡΕΘΗΚΕ"
+            android:layout_alignEnd="@id/fakeView"
+            android:layout_alignParentStart="true"
+            android:enabled="false"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            livebutton:corners="15dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_alizarin"
+            livebutton:shadowColor="@color/fbutton_color_pomegranate"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

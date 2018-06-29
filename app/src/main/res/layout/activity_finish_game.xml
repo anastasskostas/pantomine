@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_finish_game_winner"
+        android:textColor="@color/colorText"
+        android:text="Συγχαρητήρια"
+        android:textSize="20sp"
+        android:layout_marginTop="40dp"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/finish_game_activity_losersTxt"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:layout_below="@id/activity_finish_game_winner"
+        android:layout_marginTop="70dp"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp">
+
+        <View android:id="@+id/activity_finish_game_fakeView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true"/>
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/activity_finish_game_end"
+            android:text="ΝΕΟ ΠΑΙΧΝΙΔΙ"
+            android:layout_alignStart="@id/activity_finish_game_fakeView"
+            android:layout_alignParentEnd="true"
+            android:background="@color/colorBtn"
+            android:layout_marginStart="5dp"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            livebutton:corners="15dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/colorBtn"
+            livebutton:shadowColor="@color/shadowBtn"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:id="@+id/activity_finish_game_continue"
+            android:text="ΣΥΝΈΧΕΙΑ"
+            android:layout_alignEnd="@id/activity_finish_game_fakeView"
+            android:layout_alignParentStart="true"
+            android:layout_marginEnd="5dp"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            livebutton:corners="15dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_nephritis"
+            livebutton:shadowColor="@color/shadowPositive"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

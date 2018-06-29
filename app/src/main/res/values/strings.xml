@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Παντουμίμα</string>
+    <string name="action_settings">Settings</string>
+    <string name="finish_game_activity_losersTxt">Η παντομίμα δεν τελειώνει εδώ. Πατήστε συνέχεια για περισσότερους γύρους.\n\nΠάρτε την ευκαιρία να νικήσετε το παιχνίδι.</string>
+</resources>

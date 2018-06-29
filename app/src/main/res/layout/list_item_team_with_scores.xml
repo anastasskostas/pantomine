@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/list_item_team_score_name"
+        android:text="Team"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorText"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:id="@+id/list_item_team_score_score"
+        android:text="Score"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:textColor="@color/colorText"/>
+
+</LinearLayout>

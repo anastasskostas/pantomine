@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_settings_settingsText"
+        android:text="Ρυθμίσεις νέου παιχνιδιού"
+        android:textColor="@color/colorText"
+        android:gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="55dp"
+        android:layout_marginRight="55dp"
+        android:textSize="25sp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_settings_manageTime"
+        android:layout_below="@id/activity_settings_settingsText"
+        android:layout_margin="20dp">
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:text="-"
+            android:id="@+id/activity_settings_decreaseTime"
+            android:layout_alignParentStart="true"
+            android:textSize="35sp"
+            android:textColor="@color/colorText"
+            livebutton:corners="25dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_alizarin"
+            livebutton:shadowColor="@color/fbutton_color_pomegranate"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:text="+"
+            android:id="@+id/activity_settings_increaseTime"
+            android:layout_alignParentEnd="true"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            livebutton:corners="25dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_nephritis"
+            livebutton:shadowColor="@color/shadowPositive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/activity_settings_setDuration"
+            android:text="Χρόνος κάθε ομαδας: x''"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorText"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_settings_manageRounds"
+        android:layout_below="@id/activity_settings_manageTime"
+        android:layout_margin="20dp">
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:text="-"
+            android:id="@+id/activity_settings_decreaseWins"
+            android:layout_alignParentStart="true"
+            android:textSize="35sp"
+            android:textColor="@color/colorText"
+            livebutton:corners="25dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_alizarin"
+            livebutton:shadowColor="@color/fbutton_color_pomegranate"/>
+
+        <ru.katso.livebutton.LiveButton
+            android:layout_width="62dp"
+            android:layout_height="62dp"
+            android:text="+"
+            android:id="@+id/activity_settings_increaseWins"
+            android:layout_alignParentEnd="true"
+            android:textSize="25sp"
+            android:textColor="@color/colorText"
+            livebutton:corners="25dp"
+            livebutton:normalHeight="4dp"
+            livebutton:pressedHeight="2dp"
+            livebutton:backgroundColor="@color/fbutton_color_nephritis"
+            livebutton:shadowColor="@color/shadowPositive"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:id="@+id/activity_settings_setWins"
+            android:text="Συνολικές νίκες: x"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorText"/>
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_settings_checkbox_movies"
+        android:layout_below="@id/activity_settings_manageRounds"
+        android:text="Ταινίες"
+        android:textColor="@color/colorText"
+        android:layout_margin="15dp"
+        android:buttonTint="@color/colorText"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_settings_checkbox_series"
+        android:layout_below="@id/activity_settings_checkbox_movies"
+        android:text="Σειρές"
+        android:textColor="@color/colorText"
+        android:layout_margin="15dp"
+        android:buttonTint="@color/colorText"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/activity_settings_continue"
+        android:layout_marginTop="4dp"
+        android:text="ΣΥΝΕΧΕΙΑ"
+        android:textColor="@color/colorText"
+        android:layout_alignParentBottom="true"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/colorBtn"
+        livebutton:shadowColor="@color/shadowBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+</RelativeLayout>

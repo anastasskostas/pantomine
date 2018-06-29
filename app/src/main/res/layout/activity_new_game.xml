@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_new_game_listView"
+        android:layout_weight="1"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_main_name"
+        android:hint="Όνομα ομαδας"
+        android:textColor="@color/colorText"
+        android:textColorHint="@color/colorText"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/activity_new_game_addNewTeam"
+        android:text="ΠΡΟΣΘΗΚΗ ΟΜΑΔΑΣ"
+        android:textColor="@color/colorText"
+        android:background="#bf8f1c"
+        android:layout_marginBottom="4dp"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/fbutton_color_carrot"
+        livebutton:shadowColor="@color/fbutton_color_pumpkin"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/activity_new_game_continue"
+        android:layout_marginTop="4dp"
+        android:text="ΣΥΝΕΧΕΙΑ"
+        android:background="@color/colorBtn"
+        android:textColor="@color/colorText"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/colorBtn"
+        livebutton:shadowColor="@color/shadowBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+
+</LinearLayout>

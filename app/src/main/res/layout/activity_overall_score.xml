@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:livebutton="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img2"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ΒΑΘΜΟΛΟΓΙΑ"
+        android:textSize="30sp"
+        android:textStyle="bold|italic"
+        android:textColor="@color/colorText"
+        android:id="@+id/activity_overall_score_score"/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/activity_overall_score_listView"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/activity_overall_score_winnerIconLayout"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="170dp"
+            android:src="@drawable/winners_icon"
+            android:layout_gravity="center"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 ΝΙΚΕΣ"
+            android:textColor="@color/colorText"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="97dp"
+            android:textSize="20sp"
+            android:id="@+id/activity_overall_score_winnerTxt"/>
+    </RelativeLayout>
+
+    <ru.katso.livebutton.LiveButton
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="ΣΥΝΕΧΕΙΑ"
+        android:id="@+id/activity_overall_score_ok"
+        android:background="@color/colorBtn"
+        android:textColor="@color/colorText"
+        livebutton:corners="15dp"
+        livebutton:normalHeight="4dp"
+        livebutton:pressedHeight="2dp"
+        livebutton:backgroundColor="@color/colorBtn"
+        livebutton:shadowColor="@color/shadowBtn"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"/>
+</LinearLayout>
